@@ -1,0 +1,28 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+
+    <meta charset="utf-8" />
+    <title></title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script>
+$(document).ready(function(){
+$("button").click(function(){
+    $.get("http://localhost:5185/api/Products", function (data, status) {
+console.log(data);
+});
+});
+});
+    </script>
+</head>
+<body>
+    <div style="color:deepskyblue">
+        <p>01) Ensure that Your Project is running and not in a debug mode.</p>
+        <p>02) Right Click here and Goto Inspect option.</p>
+        <p>03) In Inspect select Console Option.</p>
+        <p>04) Click on below Get Products Button to get your products list.</p>
+    </div>
+    &nbsp;&nbsp;&nbsp;&nbsp;<button>Get Products</button>
+
+</body>
+</html>
